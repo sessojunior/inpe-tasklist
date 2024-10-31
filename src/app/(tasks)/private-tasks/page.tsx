@@ -23,8 +23,8 @@ export default function MyTasks() {
 						</li>
 						<li className='flex items-center justify-between'>
 							<div>
-								<input type='checkbox' className='mr-2' checked />
-								<span className='text-white line-through'>Tarefa 2</span>
+								<input type='checkbox' className='mr-2' />
+								<span className='text-white'>Tarefa 2</span>
 							</div>
 							<div>
 								<button className='bg-red-500 hover:bg-red-600 py-1 px-2 text-xs text-center rounded'>Excluir</button>
