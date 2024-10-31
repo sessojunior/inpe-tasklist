@@ -1,0 +1,40 @@
+import Link from "next/link"
+
+export default function SignIn() {
+	return (
+		<div className='flex flex-col w-[400px] border border-white p-8 rounded'>
+			<p className='pb-6'>
+				<Link href='/' className='text-blue-400'>
+					Voltar
+				</Link>
+			</p>
+			<h1 className='text-2xl font-bold pb-6'>Faça login para continuar</h1>
+			<form>
+				<div className='pb-4'>
+					<label htmlFor='email' className='block pb-1'>
+						E-mail
+					</label>
+					<input type='text' id='email' placeholder='Digite seu e-mail...' required className='p-2 rounded w-full bg-transparent border border-white' />
+				</div>
+				<div className='pb-4'>
+					<label htmlFor='password' className='block pb-1'>
+						Senha
+					</label>
+					<input type='password' id='password' placeholder='Digite sua senha...' required className='p-2 rounded w-full bg-transparent border border-white' />
+				</div>
+				<div className='pb-4'>
+					<button className='bg-blue-500 hover:bg-blue-600 py-2 px-4 text-center rounded'>Acessar</button>
+				</div>
+				<div>
+					<p>
+						Ainda não tem uma conta?{" "}
+						<Link href='/signup' className='text-blue-400'>
+							Crie agora
+						</Link>
+						.
+					</p>
+				</div>
+			</form>
+		</div>
+	)
+}
